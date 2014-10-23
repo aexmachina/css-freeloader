@@ -1,0 +1,30 @@
+{
+  "name": "CSS Freeloader",
+  "short_name": "CSS Freeloader",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Reload CSS using a hotkey",
+  "homepage_url": "https://github.com/aexmachina/freeloader",
+  "icons": {},
+  "default_locale": "en",
+  "background": {
+    "scripts": ["src/background-script.js"]
+  },
+  "permissions": [
+    "<all_urls>",
+    "tabs"
+  ],
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["src/content-script.js"]
+  }],
+  "commands": {
+    "reloadCss": {
+      "suggested_key": {
+        "default": "Ctrl+R"
+      },
+      "description": "Reload CSS",
+      "global": false
+    }
+  }
+}
