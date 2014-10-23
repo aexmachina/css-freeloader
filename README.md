@@ -1,4 +1,5 @@
 # CSS Freeloader
 
-Chrome extension that reloads CSS using a hotkey. Default hotkey combination is Ctrl-R, but you can
-change this using the _Keyboard Shortcuts_ section of the Extensions tab in Settings.
+Chrome Extension that reloads CSS when you press a key combination. The default
+key combination is Ctrl-R, but you can change this using the _Keyboard Shortcuts_
+at the bottom Chrome's Settings > Extensions.
