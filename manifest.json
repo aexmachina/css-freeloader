@@ -1,11 +1,13 @@
 {
   "name": "CSS Freeloader",
   "short_name": "CSS Freeloader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 2,
   "description": "Chrome Extension that reloads CSS when you press a key combination",
   "homepage_url": "https://github.com/aexmachina/freeloader",
-  "icons": {},
+  "icons": {
+    "128": "icons/css3.png"
+  },
   "default_locale": "en",
   "background": {
     "scripts": ["src/background-script.js"]
@@ -19,7 +21,7 @@
     "js": ["src/content-script.js"]
   }],
   "commands": {
-    "reloadCss": {
+    "reload-css": {
       "suggested_key": {
         "default": "Ctrl+R"
       },

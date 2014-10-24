@@ -1,7 +1,7 @@
 chrome.runtime.onMessage.addListener(function onMessage(request, sender, sendResponse) {
-  console.log('css-freeloader', request);
+  console.log('css-freeloader', request.command);
   switch (request.command) {
-    case 'reloadCss':
+    case 'reload-css':
       reloadCss();
       break;
   }
